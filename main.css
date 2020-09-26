@@ -92,16 +92,14 @@ div.hero h2 {
 }
 
 .skip-to-content {
-    background: #4d5791;
-    color:white;
-    font-size: 1.4em;
+    background: #4d579;
     height: 30px;
-    left: 80%;
+    left: 50%;
     padding: 8px;
     position: absolute;
     transform: translateY(-100%);
     transition: transform 0.3s;
-   }
+}
 
   
 @media screen and (min-width: 768px) {

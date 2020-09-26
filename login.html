@@ -11,29 +11,33 @@
 <body>
     <div class="menu">
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="login.html">Login</a></li>
              <!-- This is an SEO Change -->
             <li><a href="https://google.com" rel="nofollow" >Google</a></li>
         </ul>
-        
+         <!-- This is an A11y Change -->
+        <div><img src="Login_image.jpg" alt="sample login image" width="500" height="300" style="vertical-align:bottom"></div>
     <div class="hero"> 
         <div class="center">
-            <!-- This is an Semantic Change -->
-            <header><h1>Login Page</h1> </header>
+            <!-- This is a Semantic Change -->
+            <h1>Login Page</h1> 
           
         <form id="login">    
-            <label>
+            <!-- This is an A11y Change -->
+            <label for="User Name">
                 <b>User Name</b>    
-            </label>    
-            <input type="text">    
+            </label>     
+            <!-- This is an A11y Change -->
+            <input type="text" placeholder="User name" aria-required="true">    
             <br><br>    
-            <label>
+            <label for="Password"> 
                 <b>Password</b>    
             </label>    
-            <input type="Password">    
+            <input type="Password" placeholder="Enter password" aria-required="true">    
             <br><br>    
+            <!-- This is an A11y Change -->
             <input type="button" value="Log In">       
             <br><br>        
         </form>     
