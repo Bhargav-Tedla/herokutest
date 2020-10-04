@@ -2,26 +2,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+var budget= require('/Users/bhargavtedla/Dev/week03/personal-budget/budget.json');
 
-const budget = {
-    mybudget: [
-        {
-        title: 'Eat Out',
-        budget: 30
-        },
-
-        {
-        title: 'Rent',
-        budget: 350
-        },
-
-       {
-        title: 'Groceries',
-        budget: 90
-        },
-
-    ]
-};
 app.use('/',express.static('public'));
 
 app.get('/hello', (req,res) =>  {
