@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const port = 3000;
+app.use(cors());
 
 var budget= require('/Users/bhargavtedla/Dev/week03/personal-budget/budget.json');
 
-app.use('/',express.static('public'));
+
 
 app.get('/hello', (req,res) =>  {
     res.send('Hello world');
