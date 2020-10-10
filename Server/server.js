@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 app.use(cors());
 
-var budget= require('/Users/bhargavtedla/Dev/week03/personal-budget/budget.json');
+const budget= require('/Users/bhargavtedla/Dev/week03/personal-budget/budget.json');
 
 
 
@@ -16,5 +16,5 @@ app.get('/budget', (req,res) =>  {
 }); 
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`API Served at http://localhost:${port}`)
 });
