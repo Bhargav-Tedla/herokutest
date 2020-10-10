@@ -11,6 +11,8 @@ import { ArticleComponent } from './article/article.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { P404Component } from './p404/p404.component';
+import { ContactComponent } from './contact/contact.component';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 
 
@@ -25,6 +27,8 @@ import { P404Component } from './p404/p404.component';
     AboutComponent,
     LoginComponent,
     P404Component,
+    ContactComponent,
+    BreadcrumbsComponent,
   ],
   imports: [
     BrowserModule,

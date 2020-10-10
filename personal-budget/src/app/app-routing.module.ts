@@ -4,7 +4,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { P404Component } from './p404/p404.component';
-
+import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   {
   path: '',
@@ -18,6 +18,15 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'Personal Budget',
+    component: HomepageComponent,
+
+  },
+  {
+    path: 'Contact',
+    component: ContactComponent,
   },
 
   {
